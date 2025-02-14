@@ -63,6 +63,17 @@ public class kullaniciuyg implements ActionListener {
             {
                 JOptionPane.showMessageDialog(null,"Lütten tüm alanları doldurun", "Hata",JOptionPane.ERROR_MESSAGE);
             }
+            else if(şifre.length() < 5)
+            {
+                JOptionPane.showMessageDialog(null,"Minumum 5 karakter olamalı","hata",JOptionPane.ERROR_MESSAGE);
+            }
+            else if (kullaniciadi.equals("Bedirhan") && şifre.equals("12345")) {
+                JOptionPane.showMessageDialog(null,"Başarılı giriş yapıldı","giriş",JOptionPane.INFORMATION_MESSAGE);
+            }
+            else
+            {
+                JOptionPane.showMessageDialog(null,"Kullanıcı adı veya şifre yanlış","hata",JOptionPane.ERROR_MESSAGE);
+            }
         }
     }
 }
